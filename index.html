@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legendei — Gerador de legendas para redes sociais | Grátis</title>
+<meta name="description" content="Crie legendas prontas para seus posts em segundos. Descreva o post, escolha o tom (informativa, engraçada, vendas, motivacional) e receba legendas com hashtags. Grátis e sem cadastro.">
+<link rel="canonical" href="https://legendei.com.br/">
+<meta property="og:title" content="Legendei — A legenda perfeita para cada post">
+<meta property="og:description" content="Gerador gratuito de legendas para redes sociais. Do jeitinho que a sua marca fala.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F77737'/%3E%3Cstop offset='.5' stop-color='%23E1306C'/%3E%3Cstop offset='1' stop-color='%238B3DFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3Cpath d='M16 3a13 13 0 000 26z' fill='%230B0918' opacity='.25'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap topo-inner">
+    <a href="/" class="logo"><span class="logo-mark">◐</span> legendei</a>
+    <nav class="nav">
+      <span class="nav-links">
+        <a href="#gerar">Gerar</a>
+        <a href="#como">Como funciona</a>
+        <a href="#blog">Dicas</a>
+      </span>
+      <a href="#gerar" class="nav-cta">Começar grátis</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="badge">✨ Grátis e sem cadastro</span>
+    <h1>A legenda perfeita<br>para <span class="grad">cada post</span></h1>
+    <p class="hero-sub">Descreva seu post, escolha o tom e receba legendas prontas em segundos. Informativa, engraçada, de vendas — do jeitinho que a sua marca fala.</p>
+    <a href="#gerar" class="hero-cta">Criar minha legenda →</a>
+    <div class="hero-pills">
+      <span class="pill">📌 Informativa</span>
+      <span class="pill">😂 Engraçada</span>
+      <span class="pill">🚀 Motivacional</span>
+      <span class="pill">🛒 Vendas</span>
+      <span class="pill">🤍 Inglês</span>
+    </div>
+  </div>
+</section>
+
+<section id="gerar" class="tool">
+  <div class="tool-card">
+    <div class="tool-grid">
+      <!-- Entrada -->
+      <div>
+        <label class="label">Sua foto ou vídeo (opcional)</label>
+        <div id="upload" class="upload">
+          <div class="upload-inner" id="uploadInner">
+            <div class="upload-icon">🖼️</div>
+            <div class="upload-text">Toque para enviar uma imagem</div>
+            <div class="upload-hint">Ajuda a visualizar — a legenda vem da descrição abaixo</div>
+          </div>
+          <img id="preview" class="preview" alt="" hidden>
+          <input id="file" type="file" accept="image/*" hidden>
+        </div>
+        <button id="removeFoto" class="remove-foto" hidden>Remover imagem</button>
+
+        <label class="label mt">Sobre o que é o post?</label>
+        <textarea id="tema" class="textarea" maxlength="120" placeholder="Ex: lançamento do nosso novo hambúrguer artesanal"></textarea>
+        <div id="counter" class="counter">0/120</div>
+
+        <label class="label">Escolha o tom</label>
+        <div id="tons" class="tons"></div>
+
+        <button id="gerarBtn" class="gerar-btn" disabled>Descreva o post primeiro</button>
+      </div>
+
+      <!-- Resultados -->
+      <div id="results" class="results">
+        <div class="empty-state">
+          <div class="empty-icon">◐</div>
+          <div class="empty-title">Suas legendas aparecem aqui</div>
+          <div class="empty-text">Preencha ao lado e toque em "Gerar legendas".</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="favSection" class="fav-section" hidden>
+  <div class="wrap-wide">
+    <h2 class="h2">♥ Suas favoritas</h2>
+    <div id="favGrid" class="fav-grid"></div>
+  </div>
+</section>
+
+<section id="como" class="how">
+  <div class="wrap-wide">
+    <h2 class="h2">Três passos e pronto</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-title">Descreva o post</div><div class="step-desc">Escreva em uma frase sobre o que é. Pode subir a imagem pra visualizar.</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-title">Escolha o tom</div><div class="step-desc">Informativa, engraçada, de vendas, motivacional... o jeito que sua marca fala.</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-title">Copie e poste</div><div class="step-desc">Receba várias opções com hashtags, copie a favorita e cole na rede.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <div class="wrap-wide">
+    <h2 class="h2">Dicas de legenda que funcionam</h2>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <h3>A primeira linha decide tudo</h3>
+        <p>No feed, só aparecem as duas primeiras linhas antes do "ver mais". Coloque o gancho ali: uma pergunta, um número ou uma promessa. É o que faz a pessoa parar de rolar.</p>
+      </article>
+      <article class="blog-card">
+        <h3>Toda legenda merece um CTA</h3>
+        <p>Chamada pra ação não é só pra venda. "Salva esse post", "marca um amigo", "comenta aqui" — cada um desses aumenta o engajamento e ensina o algoritmo que seu conteúdo vale a pena.</p>
+      </article>
+      <article class="blog-card">
+        <h3>Hashtags: qualidade, não quantidade</h3>
+        <p>De 5 a 10 hashtags relevantes rendem mais que 30 genéricas. Misture uma ou duas grandes com outras de nicho, onde seu conteúdo tem chance real de aparecer no topo.</p>
+      </article>
+      <article class="blog-card">
+        <h3>O tom é a voz da marca</h3>
+        <p>Uma marca de humor não fala como um escritório de advocacia. Defina o tom e mantenha a consistência — é assim que as pessoas passam a reconhecer você só pela legenda.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="wrap-wide">
+    <a href="/" class="logo"><span class="logo-mark">◐</span> legendei</a>
+    <p class="foot-text">Gerador gratuito de legendas para redes sociais. Feito para criadores e social medias.</p>
+    <div class="foot-links">
+      <a href="#gerar">Gerar legenda</a>
+      <a href="#como">Como funciona</a>
+      <a href="#blog">Dicas</a>
+    </div>
+    <p class="foot-small">© 2026 legendei — as legendas são geradas por modelos de texto e podem ser editadas livremente.</p>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>

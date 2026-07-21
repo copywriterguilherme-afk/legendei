@@ -324,7 +324,7 @@ function navHTML(t){
         <a data-scroll="how">${t.nav.how}</a>
         <a data-scroll="tones">${t.nav.pricing}</a>
         <a data-scroll="faq">${t.nav.faq}</a>
-        <a href="/blog/index.html">Blog</a>
+        <a href="/blog">Blog</a>
       </nav>
       <div class="nav-right">
         <button class="icon-btn" id="themeBtn" aria-label="theme">${THEME==='light'?moonIcon:sunIcon}</button>
@@ -338,7 +338,7 @@ function navHTML(t){
       <a data-scroll="how">${t.nav.how}</a>
       <a data-scroll="tones">${t.nav.pricing}</a>
       <a data-scroll="faq">${t.nav.faq}</a>
-      <a href="/blog/index.html">Blog</a>
+      <a href="/blog">Blog</a>
     </div>
   </header>`;
 }
@@ -502,8 +502,8 @@ function footHTML(t){
   return `<footer class="foot"><div class="wrap" style="padding:50px 24px 40px">
     <div class="foot-grid">
       <div><div class="logo" style="margin-bottom:12px">${logoMark()} legendei</div><p style="color:var(--sub);font-size:14.5px;max-width:280px;line-height:1.6">${t.footer.tag}</p></div>
-      <div><div class="foot-h">${t.footer.tools}</div><a data-scroll="gerar">Informativa</a><a data-scroll="gerar">Vendas</a><a data-scroll="gerar">Inglês</a><a data-scroll="faq">FAQ</a><a href="/blog/index.html">Blog</a></div>
-      <div><div class="foot-h">${t.footer.legal}</div><a href="/politica-de-privacidade.html">${t.footer.privacy}</a><a href="/termos-de-uso.html">${t.footer.terms}</a><a href="/sobre.html">Sobre</a></div>
+      <div><div class="foot-h">${t.footer.tools}</div><a data-scroll="gerar">Informativa</a><a data-scroll="gerar">Vendas</a><a data-scroll="gerar">Inglês</a><a data-scroll="faq">FAQ</a><a href="/blog">Blog</a></div>
+      <div><div class="foot-h">${t.footer.legal}</div><a href="/politica-de-privacidade">${t.footer.privacy}</a><a href="/termos-de-uso">${t.footer.terms}</a><a href="/sobre">Sobre</a></div>
     </div>
     <div class="foot-bottom">© 2026 legendei. ${t.footer.rights}</div>
   </div></footer>`;

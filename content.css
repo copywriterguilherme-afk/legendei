@@ -1,0 +1,34 @@
+/* estilos para páginas de conteúdo (blog + institucionais) */
+.page-wrap{max-width:760px;margin:0 auto;padding:120px 24px 40px;}
+.page-wrap.wide{max-width:1100px;}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:20px;}
+.crumb a{color:var(--sub);text-decoration:none;}
+.crumb a:hover{color:var(--accent);}
+.art-tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:5px 13px;border-radius:100px;margin-bottom:18px;}
+.art-h1{font-weight:800;font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.03em;color:var(--text);margin-bottom:16px;}
+.art-meta{font-size:14px;color:var(--muted);margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.art-body{font-size:17px;line-height:1.75;color:var(--sub);}
+.art-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(22px,3.5vw,30px);letter-spacing:-.02em;color:var(--text);margin:38px 0 14px;}
+.art-body h3{font-weight:700;font-size:20px;color:var(--text);margin:28px 0 10px;}
+.art-body p{margin-bottom:18px;}
+.art-body ul,.art-body ol{margin:0 0 18px;padding-left:22px;}
+.art-body li{margin-bottom:9px;}
+.art-body strong{color:var(--text);font-weight:700;}
+.art-body a{color:var(--accent);text-decoration:underline;}
+.art-cta{margin:40px 0;padding:28px;background:var(--surface);border:1px solid var(--border);border-radius:20px;text-align:center;}
+.art-cta h3{font-size:20px;color:var(--text);margin-bottom:10px;font-weight:700;}
+.art-cta p{color:var(--sub);margin-bottom:18px;font-size:15px;}
+.blog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:32px;}
+.blog-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px;text-decoration:none;transition:transform .2s,border-color .2s;}
+.blog-card:hover{transform:translateY(-3px);border-color:var(--accent);}
+.blog-card .bc-tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);}
+.blog-card h3{font-size:19px;color:var(--text);margin:10px 0 8px;font-weight:700;line-height:1.25;}
+.blog-card p{color:var(--sub);font-size:14.5px;line-height:1.55;}
+.simple-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--navBg);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);}
+.simple-nav-in{max-width:1160px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
+.simple-nav .links{display:flex;gap:24px;align-items:center;}
+.simple-nav .links a{color:var(--sub);text-decoration:none;font-size:14.5px;font-weight:500;}
+.simple-nav .links a:hover{color:var(--text);}
+.related{margin-top:50px;padding-top:32px;border-top:1px solid var(--border);}
+.related h3{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:18px;}
+@media(max-width:640px){.simple-nav .links a:not(.nav-blog){display:none;}}

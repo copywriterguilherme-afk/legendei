@@ -11,9 +11,21 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F77737'/%3E%3Cstop offset='.5' stop-color='%23E1306C'/%3E%3Cstop offset='1' stop-color='%238B3DFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="/style.css">
+<!-- ADSENSE: cole aqui o código do Google AdSense quando tiver -->
 </head>
 <body>
 <div id="app"></div>
 <script src="/app.js"></script>
+<div id="cookieBar" style="display:none;position:fixed;bottom:16px;left:16px;right:16px;max-width:560px;margin:0 auto;z-index:200;background:#151032;border:1px solid #2A2150;border-radius:16px;padding:18px 20px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+  <p style="color:#A79FC9;font-size:13.5px;line-height:1.55;margin-bottom:12px;font-family:'Plus Jakarta Sans',sans-serif">Usamos cookies para melhorar sua experiência e exibir anúncios relevantes. Ao continuar navegando, você concorda com nossa <a href="/politica-de-privacidade.html" style="color:#E1306C">Política de Privacidade</a>.</p>
+  <div style="display:flex;gap:10px;justify-content:flex-end">
+    <button onclick="lgCookie(false)" style="background:#1B1440;border:1px solid #2A2150;color:#F3F0FF;border-radius:100px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">Recusar</button>
+    <button onclick="lgCookie(true)" style="background:linear-gradient(135deg,#F77737,#E1306C,#8B3DFF);border:none;color:#fff;border-radius:100px;padding:8px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">Aceitar</button>
+  </div>
+</div>
+<script>
+function lgCookie(ok){try{localStorage.setItem("lg_cookie",ok?"1":"0")}catch(e){}document.getElementById("cookieBar").style.display="none"}
+try{if(!localStorage.getItem("lg_cookie"))setTimeout(function(){var b=document.getElementById("cookieBar");if(b)b.style.display="block"},800)}catch(e){}
+</script>
 </body>
 </html>
